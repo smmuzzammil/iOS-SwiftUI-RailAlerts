@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   PassengerTrains.plist
+   RailAlerts
+
+   Created by Admin on 29/06/2024.
+   Copyright (c) 2024 ___ORGANIZATIONNAME___. All rights reserved.
+-->
+<plist version="1.0">
+<array>
+    <dict>
+        <key>name</key>
+        <string>The Flying Scotsman</string>
+        <key>lat</key>
+        <real>55.9469</real>
+        <key>long</key>
+        <real>-3.2019</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Orient Express</string>
+        <key>lat</key>
+        <real>48.8566</real>
+        <key>long</key>
+        <real>2.3522</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Trans-Siberian Express</string>
+        <key>lat</key>
+        <real>55.7558</real>
+        <key>long</key>
+        <real>37.6176</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Blue Train</string>
+        <key>lat</key>
+        <real>-33.9249</real>
+        <key>long</key>
+        <real>18.4241</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Golden Arrow</string>
+        <key>lat</key>
+        <real>51.5074</real>
+        <key>long</key>
+        <real>-0.1278</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>California Zephyr</string>
+        <key>lat</key>
+        <real>37.7749</real>
+        <key>long</key>
+        <real>-122.4194</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Mallard</string>
+        <key>lat</key>
+        <real>53.79</real>
+        <key>long</key>
+        <real>-0.4393</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Glacier Express</string>
+        <key>lat</key>
+        <real>46.6083</real>
+        <key>long</key>
+        <real>9.8813</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Indian Pacific</string>
+        <key>lat</key>
+        <real>-31.9535</real>
+        <key>long</key>
+        <real>115.857</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Royal Scot</string>
+        <key>lat</key>
+        <real>55.9533</real>
+        <key>long</key>
+        <real>-3.1883</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Darjeeling Himalayan (Toy Train)</string>
+        <key>lat</key>
+        <real>27.036</real>
+        <key>long</key>
+        <real>88.2627</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Palace on Wheels</string>
+        <key>lat</key>
+        <real>26.9124</real>
+        <key>long</key>
+        <real>75.7873</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Deccan Odyssey</string>
+        <key>lat</key>
+        <real>18.5204</real>
+        <key>long</key>
+        <real>73.8567</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Kalka-Shimla</string>
+        <key>lat</key>
+        <real>30.8346</real>
+        <key>long</key>
+        <real>77.116</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Maharajas' Express</string>
+        <key>lat</key>
+        <real>28.6139</real>
+        <key>long</key>
+        <real>77.209</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Karakoram Express</string>
+        <key>lat</key>
+        <real>33.6844</real>
+        <key>long</key>
+        <real>73.0479</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Green Line</string>
+        <key>lat</key>
+        <real>24.8607</real>
+        <key>long</key>
+        <real>67.0011</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Tezgam</string>
+        <key>lat</key>
+        <real>25.1394</real>
+        <key>long</key>
+        <real>67.4305</real>
+    </dict>
+</array>
+</plist>

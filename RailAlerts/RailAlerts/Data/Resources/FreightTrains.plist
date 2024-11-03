@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   FreightTrains.plist
+   RailAlerts
+
+   Created by Admin on 29/06/2024.
+   Copyright (c) 2024 ___ORGANIZATIONNAME___. All rights reserved.
+-->
+<plist version="1.0">
+<array>
+    <dict>
+        <key>name</key>
+        <string>Freightliner</string>
+        <key>lat</key>
+        <real>30.3753</real>
+        <key>long</key>
+        <real>69.3451</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>CSX Transportation</string>
+        <key>lat</key>
+        <real>29.9554</real>
+        <key>long</key>
+        <real>69.5869</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>DB Schenker Rail</string>
+        <key>lat</key>
+        <real>30.8415</real>
+        <key>long</key>
+        <real>72.4285</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>CN Rail</string>
+        <key>lat</key>
+        <real>31.5204</real>
+        <key>long</key>
+        <real>74.3587</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Ferrosur</string>
+        <key>lat</key>
+        <real>24.8607</real>
+        <key>long</key>
+        <real>67.0011</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>KPA 24</string>
+        <key>lat</key>
+        <real>33.6844</real>
+        <key>long</key>
+        <real>73.0479</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>YSW C</string>
+        <key>lat</key>
+        <real>25.1394</real>
+        <key>long</key>
+        <real>67.4305</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>DVM SPL</string>
+        <key>lat</key>
+        <real>31.5497</real>
+        <key>long</key>
+        <real>74.3436</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>ZBKH</string>
+        <key>lat</key>
+        <real>30.1575</real>
+        <key>long</key>
+        <real>71.5249</real>
+    </dict>
+</array>
+</plist>
+<plist version="1.0">
+<array>
+    <dict>
+        <key>name</key>
+        <string>Freightliner</string>
+        <key>lat</key>
+        <real>30.3753</real>
+        <key>long</key>
+        <real>69.3451</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>CSX Transportation</string>
+        <key>lat</key>
+        <real>29.9554</real>
+        <key>long</key>
+        <real>69.5869</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>DB Schenker Rail</string>
+        <key>lat</key>
+        <real>30.8415</real>
+        <key>long</key>
+        <real>72.4285</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>CN Rail</string>
+        <key>lat</key>
+        <real>31.5204</real>
+        <key>long</key>
+        <real>74.3587</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Ferrosur</string>
+        <key>lat</key>
+        <real>24.8607</real>
+        <key>long</key>
+        <real>67.0011</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>KPA 24</string>
+        <key>lat</key>
+        <real>33.6844</real>
+        <key>long</key>
+        <real>73.0479</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>YSW C</string>
+        <key>lat</key>
+        <real>25.1394</real>
+        <key>long</key>
+        <real>67.4305</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>DVM SPL</string>
+        <key>lat</key>
+        <real>31.5497</real>
+        <key>long</key>
+        <real>74.3436</real>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>ZBKH</string>
+        <key>lat</key>
+        <real>30.1575</real>
+        <key>long</key>
+        <real>71.5249</real>
+    </dict>
+</array>
+</plist>

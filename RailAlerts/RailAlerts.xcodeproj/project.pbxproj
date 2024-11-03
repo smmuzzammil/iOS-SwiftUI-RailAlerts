@@ -1,0 +1,855 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		840FEA242BF0E67B009A4D71 /* RailAlertsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FEA232BF0E67B009A4D71 /* RailAlertsApp.swift */; };
+		840FEA262BF0E67B009A4D71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FEA252BF0E67B009A4D71 /* ContentView.swift */; };
+		840FEA282BF0E67D009A4D71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840FEA272BF0E67D009A4D71 /* Assets.xcassets */; };
+		840FEA2C2BF0E67D009A4D71 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840FEA2B2BF0E67D009A4D71 /* Preview Assets.xcassets */; };
+		840FEA362BF0E67D009A4D71 /* RailAlertsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FEA352BF0E67D009A4D71 /* RailAlertsTests.swift */; };
+		840FEA402BF0E67D009A4D71 /* RailAlertsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FEA3F2BF0E67D009A4D71 /* RailAlertsUITests.swift */; };
+		840FEA422BF0E67D009A4D71 /* RailAlertsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FEA412BF0E67D009A4D71 /* RailAlertsUITestsLaunchTests.swift */; };
+		840FEA4F2BF10A56009A4D71 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FEA4E2BF10A56009A4D71 /* HomeView.swift */; };
+		840FEA512BF10AEA009A4D71 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FEA502BF10AEA009A4D71 /* DetailView.swift */; };
+		840FEA532C023441009A4D71 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FEA522C023441009A4D71 /* MapView.swift */; };
+		840FEA552C023558009A4D71 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FEA542C023558009A4D71 /* LocationManager.swift */; };
+		840FEA572C023EEA009A4D71 /* ConstantData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FEA562C023EEA009A4D71 /* ConstantData.swift */; };
+		840FEA5A2C03AF8C009A4D71 /* Train.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FEA592C03AF8C009A4D71 /* Train.swift */; };
+		840FEA5D2C03B03C009A4D71 /* TrainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FEA5C2C03B03C009A4D71 /* TrainViewModel.swift */; };
+		840FEA5F2C03B310009A4D71 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FEA5E2C03B310009A4D71 /* Station.swift */; };
+		840FEA622C03B48C009A4D71 /* RailwayEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FEA612C03B48C009A4D71 /* RailwayEntity.swift */; };
+		840FEA642C03B500009A4D71 /* StationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FEA632C03B500009A4D71 /* StationViewModel.swift */; };
+		840FEA662C03B5DB009A4D71 /* RailwayEntityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FEA652C03B5DB009A4D71 /* RailwayEntityViewModel.swift */; };
+		840FEA682C03BFCF009A4D71 /* UpdatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FEA672C03BFCE009A4D71 /* UpdatesView.swift */; };
+		840FEA6A2C03BFFD009A4D71 /* SchedulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FEA692C03BFFD009A4D71 /* SchedulesView.swift */; };
+		840FEA6F2C03D571009A4D71 /* TitleBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FEA6E2C03D571009A4D71 /* TitleBar.swift */; };
+		842F515C2C26C0FE00BD3554 /* SchedulesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F515B2C26C0FE00BD3554 /* SchedulesViewModel.swift */; };
+		842F515E2C26C84000BD3554 /* Locatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F515D2C26C84000BD3554 /* Locatable.swift */; };
+		842F51602C26C91000BD3554 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F515F2C26C91000BD3554 /* Schedule.swift */; };
+		842F51642C280DE000BD3554 /* Schedulable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F51632C280DE000BD3554 /* Schedulable.swift */; };
+		842F519D2C3082A500BD3554 /* Stations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 842F519C2C3082A500BD3554 /* Stations.plist */; };
+		842F519F2C3089D000BD3554 /* FreightTrains.plist in Resources */ = {isa = PBXBuildFile; fileRef = 842F519E2C3089D000BD3554 /* FreightTrains.plist */; };
+		842F51A12C3089E800BD3554 /* PassengerTrains.plist in Resources */ = {isa = PBXBuildFile; fileRef = 842F51A02C3089E800BD3554 /* PassengerTrains.plist */; };
+		849F5F362C3A9E7B00CDD099 /* UpdatesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F5F352C3A9E7B00CDD099 /* UpdatesViewModel.swift */; };
+		849F5F382C3B0ED500CDD099 /* Updatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F5F372C3B0ED500CDD099 /* Updatable.swift */; };
+		849F5F3A2C3B101400CDD099 /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F5F392C3B101400CDD099 /* Update.swift */; };
+		84EE285F2CCBE03E00023186 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE285E2CCBE03E00023186 /* DateHelper.swift */; };
+		84EE28612CCBE47500023186 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE28602CCBE47500023186 /* AppConstants.swift */; };
+		84EE28642CCCD90500023186 /* Text+AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE28632CCCD90500023186 /* Text+AppConstants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		840FEA322BF0E67D009A4D71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 840FEA182BF0E67B009A4D71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 840FEA1F2BF0E67B009A4D71;
+			remoteInfo = RailAlerts;
+		};
+		840FEA3C2BF0E67D009A4D71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 840FEA182BF0E67B009A4D71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 840FEA1F2BF0E67B009A4D71;
+			remoteInfo = RailAlerts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		840FEA202BF0E67B009A4D71 /* RailAlerts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RailAlerts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		840FEA232BF0E67B009A4D71 /* RailAlertsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailAlertsApp.swift; sourceTree = "<group>"; };
+		840FEA252BF0E67B009A4D71 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		840FEA272BF0E67D009A4D71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		840FEA292BF0E67D009A4D71 /* RailAlerts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RailAlerts.entitlements; sourceTree = "<group>"; };
+		840FEA2B2BF0E67D009A4D71 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		840FEA312BF0E67D009A4D71 /* RailAlertsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RailAlertsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		840FEA352BF0E67D009A4D71 /* RailAlertsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailAlertsTests.swift; sourceTree = "<group>"; };
+		840FEA3B2BF0E67D009A4D71 /* RailAlertsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RailAlertsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		840FEA3F2BF0E67D009A4D71 /* RailAlertsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailAlertsUITests.swift; sourceTree = "<group>"; };
+		840FEA412BF0E67D009A4D71 /* RailAlertsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailAlertsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		840FEA4E2BF10A56009A4D71 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		840FEA502BF10AEA009A4D71 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		840FEA522C023441009A4D71 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		840FEA542C023558009A4D71 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		840FEA562C023EEA009A4D71 /* ConstantData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantData.swift; sourceTree = "<group>"; };
+		840FEA592C03AF8C009A4D71 /* Train.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Train.swift; sourceTree = "<group>"; };
+		840FEA5C2C03B03C009A4D71 /* TrainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainViewModel.swift; sourceTree = "<group>"; };
+		840FEA5E2C03B310009A4D71 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		840FEA612C03B48C009A4D71 /* RailwayEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailwayEntity.swift; sourceTree = "<group>"; };
+		840FEA632C03B500009A4D71 /* StationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewModel.swift; sourceTree = "<group>"; };
+		840FEA652C03B5DB009A4D71 /* RailwayEntityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailwayEntityViewModel.swift; sourceTree = "<group>"; };
+		840FEA672C03BFCE009A4D71 /* UpdatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatesView.swift; sourceTree = "<group>"; };
+		840FEA692C03BFFD009A4D71 /* SchedulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulesView.swift; sourceTree = "<group>"; };
+		840FEA6E2C03D571009A4D71 /* TitleBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleBar.swift; sourceTree = "<group>"; };
+		842F515B2C26C0FE00BD3554 /* SchedulesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulesViewModel.swift; sourceTree = "<group>"; };
+		842F515D2C26C84000BD3554 /* Locatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locatable.swift; sourceTree = "<group>"; };
+		842F515F2C26C91000BD3554 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		842F51632C280DE000BD3554 /* Schedulable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedulable.swift; sourceTree = "<group>"; };
+		842F519C2C3082A500BD3554 /* Stations.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Stations.plist; sourceTree = "<group>"; };
+		842F519E2C3089D000BD3554 /* FreightTrains.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FreightTrains.plist; sourceTree = "<group>"; };
+		842F51A02C3089E800BD3554 /* PassengerTrains.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PassengerTrains.plist; sourceTree = "<group>"; };
+		849F5F352C3A9E7B00CDD099 /* UpdatesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatesViewModel.swift; sourceTree = "<group>"; };
+		849F5F372C3B0ED500CDD099 /* Updatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Updatable.swift; sourceTree = "<group>"; };
+		849F5F392C3B101400CDD099 /* Update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
+		84EE285E2CCBE03E00023186 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		84EE28602CCBE47500023186 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		84EE28632CCCD90500023186 /* Text+AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+AppConstants.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		840FEA1D2BF0E67B009A4D71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840FEA2E2BF0E67D009A4D71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840FEA382BF0E67D009A4D71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		840FEA172BF0E67B009A4D71 = {
+			isa = PBXGroup;
+			children = (
+				840FEA222BF0E67B009A4D71 /* RailAlerts */,
+				840FEA342BF0E67D009A4D71 /* RailAlertsTests */,
+				840FEA3E2BF0E67D009A4D71 /* RailAlertsUITests */,
+				840FEA212BF0E67B009A4D71 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		840FEA212BF0E67B009A4D71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				840FEA202BF0E67B009A4D71 /* RailAlerts.app */,
+				840FEA312BF0E67D009A4D71 /* RailAlertsTests.xctest */,
+				840FEA3B2BF0E67D009A4D71 /* RailAlertsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		840FEA222BF0E67B009A4D71 /* RailAlerts */ = {
+			isa = PBXGroup;
+			children = (
+				84EE28512CC586E300023186 /* App */,
+				84EE28552CC586E400023186 /* Data */,
+				84EE28592CC586E400023186 /* Domain */,
+				84EE28532CC586E300023186 /* Frameworks */,
+				84EE284D2CC586E300023186 /* Presentation */,
+			);
+			path = RailAlerts;
+			sourceTree = "<group>";
+		};
+		840FEA2A2BF0E67D009A4D71 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				840FEA2B2BF0E67D009A4D71 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		840FEA342BF0E67D009A4D71 /* RailAlertsTests */ = {
+			isa = PBXGroup;
+			children = (
+				840FEA352BF0E67D009A4D71 /* RailAlertsTests.swift */,
+			);
+			path = RailAlertsTests;
+			sourceTree = "<group>";
+		};
+		840FEA3E2BF0E67D009A4D71 /* RailAlertsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				840FEA3F2BF0E67D009A4D71 /* RailAlertsUITests.swift */,
+				840FEA412BF0E67D009A4D71 /* RailAlertsUITestsLaunchTests.swift */,
+			);
+			path = RailAlertsUITests;
+			sourceTree = "<group>";
+		};
+		84EE284D2CC586E300023186 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				84EE28622CCCD8DD00023186 /* Extensions */,
+				840FEA2A2BF0E67D009A4D71 /* Preview Content */,
+				84EE284E2CC586E300023186 /* ViewModels */,
+				84EE284F2CC586E300023186 /* Navigation */,
+				84EE28502CC586E300023186 /* Views */,
+				840FEA272BF0E67D009A4D71 /* Assets.xcassets */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		84EE284E2CC586E300023186 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				840FEA5C2C03B03C009A4D71 /* TrainViewModel.swift */,
+				840FEA632C03B500009A4D71 /* StationViewModel.swift */,
+				840FEA652C03B5DB009A4D71 /* RailwayEntityViewModel.swift */,
+				842F515B2C26C0FE00BD3554 /* SchedulesViewModel.swift */,
+				849F5F352C3A9E7B00CDD099 /* UpdatesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		84EE284F2CC586E300023186 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		84EE28502CC586E300023186 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				840FEA6E2C03D571009A4D71 /* TitleBar.swift */,
+				840FEA252BF0E67B009A4D71 /* ContentView.swift */,
+				840FEA4E2BF10A56009A4D71 /* HomeView.swift */,
+				840FEA502BF10AEA009A4D71 /* DetailView.swift */,
+				840FEA672C03BFCE009A4D71 /* UpdatesView.swift */,
+				840FEA522C023441009A4D71 /* MapView.swift */,
+				840FEA692C03BFFD009A4D71 /* SchedulesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84EE28512CC586E300023186 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				840FEA292BF0E67D009A4D71 /* RailAlerts.entitlements */,
+				840FEA232BF0E67B009A4D71 /* RailAlertsApp.swift */,
+				84EE28522CC586E300023186 /* Constants */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		84EE28522CC586E300023186 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				840FEA562C023EEA009A4D71 /* ConstantData.swift */,
+				84EE28602CCBE47500023186 /* AppConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		84EE28532CC586E300023186 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84EE285D2CCBE02800023186 /* Utilities */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		84EE28552CC586E400023186 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				84EE28562CC586E400023186 /* Resources */,
+				84EE28572CC586E400023186 /* Repositories */,
+				84EE28582CC586E400023186 /* Services */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		84EE28562CC586E400023186 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				842F519C2C3082A500BD3554 /* Stations.plist */,
+				842F519E2C3089D000BD3554 /* FreightTrains.plist */,
+				842F51A02C3089E800BD3554 /* PassengerTrains.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		84EE28572CC586E400023186 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		84EE28582CC586E400023186 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				840FEA542C023558009A4D71 /* LocationManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		84EE28592CC586E400023186 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				84EE285A2CC586E400023186 /* Models */,
+				84EE285B2CC586E400023186 /* Protocols */,
+				84EE285C2CC586E400023186 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		84EE285A2CC586E400023186 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				840FEA592C03AF8C009A4D71 /* Train.swift */,
+				840FEA5E2C03B310009A4D71 /* Station.swift */,
+				842F515F2C26C91000BD3554 /* Schedule.swift */,
+				849F5F392C3B101400CDD099 /* Update.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84EE285B2CC586E400023186 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				840FEA612C03B48C009A4D71 /* RailwayEntity.swift */,
+				842F515D2C26C84000BD3554 /* Locatable.swift */,
+				842F51632C280DE000BD3554 /* Schedulable.swift */,
+				849F5F372C3B0ED500CDD099 /* Updatable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		84EE285C2CC586E400023186 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		84EE285D2CCBE02800023186 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				84EE285E2CCBE03E00023186 /* DateHelper.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		84EE28622CCCD8DD00023186 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				84EE28632CCCD90500023186 /* Text+AppConstants.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		840FEA1F2BF0E67B009A4D71 /* RailAlerts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 840FEA452BF0E67D009A4D71 /* Build configuration list for PBXNativeTarget "RailAlerts" */;
+			buildPhases = (
+				840FEA1C2BF0E67B009A4D71 /* Sources */,
+				840FEA1D2BF0E67B009A4D71 /* Frameworks */,
+				840FEA1E2BF0E67B009A4D71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RailAlerts;
+			productName = RailAlerts;
+			productReference = 840FEA202BF0E67B009A4D71 /* RailAlerts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		840FEA302BF0E67D009A4D71 /* RailAlertsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 840FEA482BF0E67D009A4D71 /* Build configuration list for PBXNativeTarget "RailAlertsTests" */;
+			buildPhases = (
+				840FEA2D2BF0E67D009A4D71 /* Sources */,
+				840FEA2E2BF0E67D009A4D71 /* Frameworks */,
+				840FEA2F2BF0E67D009A4D71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				840FEA332BF0E67D009A4D71 /* PBXTargetDependency */,
+			);
+			name = RailAlertsTests;
+			productName = RailAlertsTests;
+			productReference = 840FEA312BF0E67D009A4D71 /* RailAlertsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		840FEA3A2BF0E67D009A4D71 /* RailAlertsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 840FEA4B2BF0E67D009A4D71 /* Build configuration list for PBXNativeTarget "RailAlertsUITests" */;
+			buildPhases = (
+				840FEA372BF0E67D009A4D71 /* Sources */,
+				840FEA382BF0E67D009A4D71 /* Frameworks */,
+				840FEA392BF0E67D009A4D71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				840FEA3D2BF0E67D009A4D71 /* PBXTargetDependency */,
+			);
+			name = RailAlertsUITests;
+			productName = RailAlertsUITests;
+			productReference = 840FEA3B2BF0E67D009A4D71 /* RailAlertsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		840FEA182BF0E67B009A4D71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					840FEA1F2BF0E67B009A4D71 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					840FEA302BF0E67D009A4D71 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 840FEA1F2BF0E67B009A4D71;
+					};
+					840FEA3A2BF0E67D009A4D71 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 840FEA1F2BF0E67B009A4D71;
+					};
+				};
+			};
+			buildConfigurationList = 840FEA1B2BF0E67B009A4D71 /* Build configuration list for PBXProject "RailAlerts" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 840FEA172BF0E67B009A4D71;
+			productRefGroup = 840FEA212BF0E67B009A4D71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				840FEA1F2BF0E67B009A4D71 /* RailAlerts */,
+				840FEA302BF0E67D009A4D71 /* RailAlertsTests */,
+				840FEA3A2BF0E67D009A4D71 /* RailAlertsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		840FEA1E2BF0E67B009A4D71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840FEA2C2BF0E67D009A4D71 /* Preview Assets.xcassets in Resources */,
+				842F519D2C3082A500BD3554 /* Stations.plist in Resources */,
+				842F51A12C3089E800BD3554 /* PassengerTrains.plist in Resources */,
+				840FEA282BF0E67D009A4D71 /* Assets.xcassets in Resources */,
+				842F519F2C3089D000BD3554 /* FreightTrains.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840FEA2F2BF0E67D009A4D71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840FEA392BF0E67D009A4D71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		840FEA1C2BF0E67B009A4D71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84EE28642CCCD90500023186 /* Text+AppConstants.swift in Sources */,
+				840FEA6F2C03D571009A4D71 /* TitleBar.swift in Sources */,
+				840FEA5D2C03B03C009A4D71 /* TrainViewModel.swift in Sources */,
+				840FEA532C023441009A4D71 /* MapView.swift in Sources */,
+				849F5F362C3A9E7B00CDD099 /* UpdatesViewModel.swift in Sources */,
+				842F515E2C26C84000BD3554 /* Locatable.swift in Sources */,
+				842F51642C280DE000BD3554 /* Schedulable.swift in Sources */,
+				842F51602C26C91000BD3554 /* Schedule.swift in Sources */,
+				840FEA4F2BF10A56009A4D71 /* HomeView.swift in Sources */,
+				849F5F3A2C3B101400CDD099 /* Update.swift in Sources */,
+				84EE285F2CCBE03E00023186 /* DateHelper.swift in Sources */,
+				840FEA642C03B500009A4D71 /* StationViewModel.swift in Sources */,
+				840FEA552C023558009A4D71 /* LocationManager.swift in Sources */,
+				840FEA512BF10AEA009A4D71 /* DetailView.swift in Sources */,
+				840FEA622C03B48C009A4D71 /* RailwayEntity.swift in Sources */,
+				840FEA682C03BFCF009A4D71 /* UpdatesView.swift in Sources */,
+				840FEA5A2C03AF8C009A4D71 /* Train.swift in Sources */,
+				849F5F382C3B0ED500CDD099 /* Updatable.swift in Sources */,
+				840FEA5F2C03B310009A4D71 /* Station.swift in Sources */,
+				840FEA262BF0E67B009A4D71 /* ContentView.swift in Sources */,
+				84EE28612CCBE47500023186 /* AppConstants.swift in Sources */,
+				840FEA6A2C03BFFD009A4D71 /* SchedulesView.swift in Sources */,
+				840FEA572C023EEA009A4D71 /* ConstantData.swift in Sources */,
+				840FEA662C03B5DB009A4D71 /* RailwayEntityViewModel.swift in Sources */,
+				840FEA242BF0E67B009A4D71 /* RailAlertsApp.swift in Sources */,
+				842F515C2C26C0FE00BD3554 /* SchedulesViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840FEA2D2BF0E67D009A4D71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840FEA362BF0E67D009A4D71 /* RailAlertsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840FEA372BF0E67D009A4D71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840FEA402BF0E67D009A4D71 /* RailAlertsUITests.swift in Sources */,
+				840FEA422BF0E67D009A4D71 /* RailAlertsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		840FEA332BF0E67D009A4D71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 840FEA1F2BF0E67B009A4D71 /* RailAlerts */;
+			targetProxy = 840FEA322BF0E67D009A4D71 /* PBXContainerItemProxy */;
+		};
+		840FEA3D2BF0E67D009A4D71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 840FEA1F2BF0E67B009A4D71 /* RailAlerts */;
+			targetProxy = 840FEA3C2BF0E67D009A4D71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		840FEA432BF0E67D009A4D71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		840FEA442BF0E67D009A4D71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		840FEA462BF0E67D009A4D71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RailAlerts/App/RailAlerts.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RailAlerts/Presentation/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.falcon.RailAlerts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		840FEA472BF0E67D009A4D71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RailAlerts/App/RailAlerts.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RailAlerts/Presentation/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.falcon.RailAlerts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		840FEA492BF0E67D009A4D71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.falcon.RailAlertsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RailAlerts.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RailAlerts";
+			};
+			name = Debug;
+		};
+		840FEA4A2BF0E67D009A4D71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.falcon.RailAlertsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RailAlerts.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RailAlerts";
+			};
+			name = Release;
+		};
+		840FEA4C2BF0E67D009A4D71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.falcon.RailAlertsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RailAlerts;
+			};
+			name = Debug;
+		};
+		840FEA4D2BF0E67D009A4D71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.falcon.RailAlertsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RailAlerts;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		840FEA1B2BF0E67B009A4D71 /* Build configuration list for PBXProject "RailAlerts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840FEA432BF0E67D009A4D71 /* Debug */,
+				840FEA442BF0E67D009A4D71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		840FEA452BF0E67D009A4D71 /* Build configuration list for PBXNativeTarget "RailAlerts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840FEA462BF0E67D009A4D71 /* Debug */,
+				840FEA472BF0E67D009A4D71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		840FEA482BF0E67D009A4D71 /* Build configuration list for PBXNativeTarget "RailAlertsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840FEA492BF0E67D009A4D71 /* Debug */,
+				840FEA4A2BF0E67D009A4D71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		840FEA4B2BF0E67D009A4D71 /* Build configuration list for PBXNativeTarget "RailAlertsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840FEA4C2BF0E67D009A4D71 /* Debug */,
+				840FEA4D2BF0E67D009A4D71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 840FEA182BF0E67B009A4D71 /* Project object */;
+}
